@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"rootDir": "src",
+		"target": "esnext",
+		"lib": ["esnext"],
+		"module": "commonjs",
+		"types": [
+			"@typescript-to-lua/language-extensions",
+			"lua-types/5.4",
+			"grandMA3-types"
+		],
+		"strict": true
+	},
+	"tstl": {
+		"luaTarget": "5.4",
+		"noHeader": true,
+		"luaBundle": "dist/plugin.lua",
+		"luaBundleEntry": "src/plugin.ts",
+		"noImplicitSelf": true,
+		"luaPlugins": [{ "name": "grandMA3-tstl-plugin" }]
+	}
+}
