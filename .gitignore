@@ -120,3 +120,5 @@ dist
 
 # vscode
 /.vscode
+
+.DS_Store
